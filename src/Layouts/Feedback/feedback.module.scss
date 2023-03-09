@@ -1,0 +1,20 @@
+.feedback {
+  @apply flex flex-col items-center;
+
+  form {
+    @apply flex flex-col w-full max-w-[430px] px-4 mt-14;
+    label {
+      @apply text-black text-xl mb-4;
+    }
+    input,
+    textarea {
+      @apply p-4 rounded-xl mb-10 outline-none border border-green shadow;
+    }
+    p {
+      @apply text-red opacity-80 -mt-8 mb-3;
+    }
+    button {
+      @apply mx-8 mt-6;
+    }
+  }
+}

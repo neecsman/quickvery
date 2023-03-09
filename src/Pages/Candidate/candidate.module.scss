@@ -1,0 +1,85 @@
+.form {
+  @apply flex flex-col justify-center w-full m-auto;
+
+  @media (min-width: 768px) {
+    width: 700px;
+  }
+
+  h1 {
+    @apply text-center text-white text-2xl lg:text-6xl my-6 lg:my-14 font-bold;
+  }
+
+  h2 {
+    @apply mb-10;
+  }
+
+  label {
+    @apply text-black text-xl mb-4;
+  }
+
+  input,
+  textarea {
+    @apply p-4  rounded-xl mb-10 outline-none font-sans border border-green shadow;
+  }
+  p {
+    @apply text-red opacity-80 -mt-8 mb-3;
+  }
+  &_group {
+    @apply flex flex-wrap md:flex-nowrap justify-around;
+    & > div {
+      @apply flex flex-col w-full mx-3;
+    }
+  }
+
+  &_selector {
+    @apply flex  flex-col mb-14 mx-0 md:mx-2;
+
+    label {
+      @apply mx-4 md:mx-0;
+    }
+
+    & > div {
+      @apply flex flex-wrap flex-col justify-center md:flex-row  md:justify-between;
+
+      label {
+        @apply cursor-pointer;
+
+        input {
+          @apply hidden;
+        }
+
+        div {
+          @apply flex items-center justify-center text-center text-sm font-semibold border border-green rounded-xl p-4 hover:bg-green hover:text-black transition-all active:scale-95 w-full md:w-52 h-12;
+        }
+
+        input:checked + div {
+          @apply bg-green text-white;
+        }
+
+        input:disabled + div {
+          @apply opacity-60;
+        }
+      }
+    }
+  }
+}
+
+.tel {
+  input {
+    @apply w-full;
+  }
+  & > div > div {
+    @apply hidden;
+  }
+}
+
+.adress > div {
+  @apply relative;
+  ul {
+    @apply bg-black text-white border border-green flex flex-col items-start p-5 rounded-lg -mt-9 absolute w-full;
+
+    li {
+      @apply hover:bg-gray;
+    }
+  }
+}

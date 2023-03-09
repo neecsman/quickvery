@@ -1,0 +1,6 @@
+.scroll {
+  @apply fixed bottom-4 xl:bottom-5 right-4 xl:right-14 bg-green w-14 h-14 rounded-lg flex justify-center items-center active:scale-95 transition-all;
+  ion-icon {
+    @apply text-xl;
+  }
+}

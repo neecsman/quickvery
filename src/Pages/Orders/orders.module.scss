@@ -1,0 +1,57 @@
+.table {
+  @apply rounded-xl font-sans border-separate border-spacing-y-2 w-full;
+  thead {
+    tr {
+      th {
+        @apply p-3 border text-start;
+      }
+    }
+  }
+  tbody,
+  thead {
+    tr {
+      td,
+      th {
+        @apply p-3 bg-white border border-lightgray shadow-sm;
+        max-width: 150px;
+      }
+
+      td:first-child,
+      th:first-child {
+        @apply rounded-tl-xl rounded-bl-xl;
+      }
+      td:last-child,
+      th:last-child {
+        @apply rounded-tr-xl rounded-br-xl;
+      }
+    }
+
+    td:last-child {
+      @apply text-center;
+    }
+  }
+}
+
+.sort {
+  @apply flex;
+
+  & label:not(:first-child) {
+    @apply ml-2;
+  }
+
+  label {
+    @apply cursor-pointer;
+
+    input {
+      @apply hidden;
+    }
+
+    div {
+      @apply flex items-center justify-center text-[12px] xl:text-sm text-center border text-white border-green rounded-xl hover:bg-green hover:text-black transition-all active:scale-95 px-4 py-2;
+    }
+
+    input:checked + div {
+      @apply bg-green text-black;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.location {
+  @apply flex items-center text-black;
+  img {
+    @apply mx-2;
+  }
+}
+
+.popup {
+  &__header {
+    @apply flex justify-between mb-4 text-2xl pb-6 border-b-2 border-b-white border-opacity-60;
+  }
+
+  &__list {
+    @apply flex;
+    ul {
+      @apply mr-10;
+
+      li {
+        @apply cursor-pointer opacity-60 hover:text-green mr-5 hover:opacity-100;
+      }
+    }
+  }
+}

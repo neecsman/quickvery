@@ -1,0 +1,19 @@
+.form {
+  @apply bg-white w-full px-4 sm:px-14  sm:w-[500px] p-12 shadow-md rounded-xl border border-lightgray;
+  &_group {
+    & > div {
+      @apply flex flex-col;
+      label {
+        @apply text-black text-xl mb-2;
+      }
+
+      input {
+        @apply p-4 w-full rounded-xl mb-4 active:border-none outline-none border border-lightgray;
+      }
+
+      p {
+        @apply -mt-2 mb-2 text-red;
+      }
+    }
+  }
+}

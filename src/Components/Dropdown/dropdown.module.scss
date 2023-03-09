@@ -1,0 +1,24 @@
+.dropdown {
+  @apply relative;
+  &_nav {
+    @apply absolute hidden opacity-0 top-12 right-0 p-4 bg-white shadow-md border border-lightgray rounded-lg transition-all w-56;
+    ul {
+      @apply py-2;
+      a {
+        li {
+          @apply flex items-center justify-between text-lg font-semibold px-4 py-2 hover:bg-lightgray cursor-pointer rounded-md active:scale-95 transition-all;
+          ion-icon {
+            --ionicon-stroke-width: 50px;
+          }
+        }
+
+        &:last-child {
+          @apply hover:text-red;
+        }
+      }
+    }
+  }
+  &:focus-within &_nav {
+    @apply opacity-100 block transition-all;
+  }
+}

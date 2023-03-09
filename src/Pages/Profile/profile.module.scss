@@ -1,0 +1,33 @@
+.profile {
+  &_title {
+    @apply flex justify-center my-8;
+    h1 {
+      @apply text-black text-2xl lg:text-5xl font-semibold;
+    }
+  }
+  &_container {
+    @apply flex justify-center items-center text-black;
+
+    form {
+      @apply flex flex-col px-4 lg:px-12 py-12 bg-white border border-lightgray shadow-sm rounded-3xl text-white font-semibold text-xl;
+      label {
+        @apply mb-1 text-black;
+      }
+      input {
+        @apply py-3 px-4 rounded-2xl outline-none text-black mb-8 text-sm w-full font-sans border border-green shadow;
+      }
+      input[readonly] {
+        @apply bg-lightgray;
+      }
+
+      ion-icon {
+        width: 16px;
+        --ionicon-stroke-width: 24px;
+      }
+
+      button {
+        @apply mt-4;
+      }
+    }
+  }
+}

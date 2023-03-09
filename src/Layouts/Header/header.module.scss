@@ -1,0 +1,15 @@
+header {
+  @apply py-6 flex justify-center xl:px-0 shadow-sm border-b-lightgray;
+
+  .nav {
+    @apply hidden xl:flex self-center;
+
+    ul {
+      @apply flex text-white;
+
+      li {
+        @apply mx-3 cursor-pointer opacity-60 hover:text-green hover:opacity-100 text-fullbalck;
+      }
+    }
+  }
+}

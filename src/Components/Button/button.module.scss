@@ -1,0 +1,31 @@
+.primary {
+  @apply transition-all border border-green bg-green rounded-xl py-2 px-5 font-medium hover:scale-95 active:scale-100 text-white;
+}
+
+.secondary {
+  @apply transition-all border border-green rounded-xl py-2 px-5 mx-2 font-medium text-black text-opacity-80 hover:bg-white hover:text-black hover:opacity-100 hover:scale-95 active:scale-100;
+}
+
+.profile {
+  @apply transition-all border border-green rounded-full p-3 hover:scale-95 active:scale-100 mx-2;
+}
+
+.xl {
+  @apply transition-all border border-green bg-green rounded-lg py-4 px-16 font-semibold text-xl  hover:scale-95 active:scale-100 text-white;
+}
+
+.tarifs {
+  @apply mt-10 transition-all w-full border border-green bg-green rounded-lg py-2 px-5 text-xl hover:scale-95 active:scale-100 text-white;
+}
+
+.auth {
+  @apply transition-all border border-green bg-green rounded-xl py-2 px-5 text-xl hover:bg-white hover:border-white active:scale-95 w-full text-white;
+}
+
+.cancel {
+  @apply bg-red rounded-full hover:text-white py-2 px-5 active:scale-95 mx-2;
+}
+
+.repeat {
+  @apply transition-all border border-green bg-green rounded-xl py-2 px-5 font-medium hover:bg-white hover:text-black active:scale-95;
+}

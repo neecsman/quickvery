@@ -1,0 +1,33 @@
+.form {
+  @apply bg-white border border-lightgray w-full px-4 sm:px-14  sm:w-[600px] p-12 shadow-md rounded-xl;
+  &_group {
+    & > div {
+      @apply flex justify-between;
+
+      label {
+        @apply text-black text-lg mb-2;
+      }
+
+      input {
+        @apply p-4 w-full rounded-xl mb-4 active:border-none outline-none border border-lightgray;
+      }
+
+      p {
+        @apply -mt-2 mb-2 text-red;
+      }
+    }
+
+    & > div > div {
+      @apply flex flex-col w-full mx-2;
+    }
+  }
+}
+
+.tel {
+  input {
+    @apply w-full font-sans;
+  }
+  & > div > div {
+    @apply hidden;
+  }
+}

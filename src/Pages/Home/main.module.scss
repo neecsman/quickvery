@@ -1,0 +1,202 @@
+h2 {
+  @apply text-black text-center leading-tight;
+  font-size: 2.5rem;
+}
+section {
+  @apply mt-20;
+
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @media (min-width: 1400px) {
+    margin-top: 10rem;
+  }
+}
+
+.main {
+  background-image: linear-gradient(rgba(000, 0, 0, 0.5), rgba(000, 0, 0, 0.5)),
+    url("../../img/mainbg.jpg");
+  background-size: cover;
+  @apply w-full;
+
+  &__container {
+    @apply flex flex-wrap justify-center xl:justify-between max-w-7xl py-64;
+    max-width: 1440px;
+    margin: 0 auto;
+    &_left {
+      @apply flex flex-col items-center text-center xl:text-start xl:items-start;
+      max-width: 600px;
+
+      h1 {
+        @apply text-white leading-none;
+        font-size: 3.5rem;
+        @media (max-width: 500px) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        @apply text-white opacity-60 py-14;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.advantages {
+  h2 {
+    @apply text-center;
+  }
+  &_block {
+    margin-top: 3.5rem;
+    @apply flex flex-wrap justify-center w-full bg-white text-black text-center rounded-3xl py-10 px-24;
+    & > div {
+      @apply shadow-md rounded-xl border-lightgray border p-10 mx-4;
+      width: 307px;
+      & > h3 {
+        @apply text-3xl font-medium;
+      }
+      & > p {
+        @apply text-xl opacity-80 mt-6;
+      }
+    }
+  }
+}
+
+.region {
+  @apply flex flex-wrap justify-center items-center;
+  h2 {
+    @apply text-start;
+  }
+  &_left {
+    max-width: 600px;
+  }
+  &_right {
+    @apply p-28 mr-28;
+    max-width: 600px;
+
+    ul {
+      @apply mt-14;
+      li {
+        @apply relative left-10 text-black text-xl text-opacity-60 before:content-[''] before:absolute before:w-4 before:h-4 before:bg-green before:rounded-full before:-left-10 before:top-4;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+.delivery {
+  @apply flex flex-col items-center;
+  &_container {
+    @apply flex flex-wrap justify-center mt-14 max-w-7xl;
+    & > div {
+      @apply m-5 py-14 px-8 rounded-xl bg-gray flex flex-col items-center justify-end;
+      height: 328px;
+      width: 330px;
+      p {
+        @apply text-3xl text-white;
+      }
+    }
+  }
+  &_clothes {
+    background-image: url("../../img/delivery/clothes.png");
+    background-size: cover;
+  }
+  &_docs {
+    background-image: url("../../img/delivery/docs.png");
+    background-size: cover;
+  }
+  &_products {
+    background-image: url("../../img/delivery/products.png");
+    background-size: cover;
+  }
+  &_gifts {
+    background-image: url("../../img/delivery/gifts.png");
+    background-size: cover;
+  }
+  &_medical {
+    background-image: url("../../img/delivery/medical.png");
+    background-size: cover;
+  }
+  &_internet {
+    background-image: url("../../img/delivery/internet.png");
+    background-size: cover;
+  }
+}
+
+.how {
+  &_container {
+    @apply flex flex-wrap justify-center;
+
+    &_item {
+      @apply bg-white  px-10 py-9 rounded-xl m-5;
+      max-width: 510px;
+      h3 {
+        @apply text-green font-medium text-3xl;
+      }
+      p {
+        @apply opacity-60 text-xl mt-6;
+      }
+    }
+  }
+}
+
+.tarifs {
+  &_container {
+    @apply flex flex-wrap justify-center mt-20;
+    &_item {
+      @apply border border-gray rounded-xl shadow-md m-5;
+      width: 387px;
+      &_header {
+        @apply border-b border-lightgray p-10;
+
+        h3 {
+          @apply text-3xl font-medium text-center;
+        }
+      }
+      &_body {
+        @apply p-10;
+        ul {
+          li {
+            @apply relative left-10 text-black text-xl text-opacity-80 before:content-[''] before:absolute before:w-4 before:h-4 before:bg-green before:rounded-full before:-left-10 before:top-4;
+            line-height: 3rem;
+          }
+        }
+
+        h3 {
+          @apply text-3xl font-medium text-center mt-20;
+        }
+      }
+    }
+  }
+}
+
+.payments {
+  &_container {
+    @apply flex flex-wrap justify-between items-center bg-gray rounded-xl p-10 py-32;
+
+    &_block {
+      margin: 0 auto;
+      max-width: 600px;
+
+      p {
+        @apply text-black text-xl mt-14 leading-8 opacity-80;
+      }
+
+      &_pay {
+        @apply flex flex-wrap justify-around mt-10;
+
+        div {
+          @apply flex flex-col items-center;
+
+          img {
+            width: 160px;
+          }
+
+          span {
+            @apply text-2xl font-medium mt-8;
+          }
+        }
+      }
+    }
+  }
+}

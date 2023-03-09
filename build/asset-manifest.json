@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4971e1e.css",
+    "main.js": "/static/js/main.ddf3ff7e.js",
+    "static/media/mainbg.jpg": "/static/media/mainbg.fae7e324f9d455aabd20.jpg",
+    "static/media/products.png": "/static/media/products.d104c2f466482b93ef6f.png",
+    "static/media/internet.png": "/static/media/internet.6ba6ab89f961217c96ad.png",
+    "static/media/region.jpg": "/static/media/region.62eb28bea0b1939b300d.jpg",
+    "static/media/gifts.png": "/static/media/gifts.c484e172eb88ac991ea8.png",
+    "static/media/medical.png": "/static/media/medical.7936408b5bc49f8faaec.png",
+    "static/media/docs.png": "/static/media/docs.8bf1ef2b7bab4cc46f62.png",
+    "static/media/clothes.png": "/static/media/clothes.d02dcb1f981f456ed9a0.png",
+    "static/media/card.png": "/static/media/card.3adebc41ecc96ccc2e17.png",
+    "static/media/cash.png": "/static/media/cash.79ec2140516861c36e43.png",
+    "static/media/logo.svg": "/static/media/logo.005eb4ebd365d63eaa9af71ed9a3b548.svg",
+    "static/media/mir.svg": "/static/media/mir.a9b443ecf8e6b589f9a7782c3c28ccf9.svg",
+    "static/media/visa.svg": "/static/media/visa.b268272299dae5162f3dceaa23db7413.svg",
+    "index.html": "/index.html",
+    "static/media/mc.svg": "/static/media/mc.b720e3b5a9bf9bce7ef42d6682f56356.svg",
+    "static/media/location.svg": "/static/media/location.4cf6517a4d8d1b886c89abb1f89e0a4b.svg",
+    "main.d4971e1e.css.map": "/static/css/main.d4971e1e.css.map",
+    "main.ddf3ff7e.js.map": "/static/js/main.ddf3ff7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4971e1e.css",
+    "static/js/main.ddf3ff7e.js"
+  ]
+}

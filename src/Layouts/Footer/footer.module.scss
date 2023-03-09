@@ -1,0 +1,44 @@
+.footer {
+  @apply flex flex-wrap justify-between text-black py-10;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.info {
+  @apply text-black text-opacity-60 pt-5;
+  ul {
+    @apply my-4;
+    li {
+      @apply leading-7;
+    }
+  }
+}
+
+.nav,
+.docs,
+.contacts,
+.adress {
+  @apply flex flex-col;
+  max-width: 258px;
+  h3 {
+    @apply text-[1rem] mb-4 mt-5;
+  }
+
+  nav {
+    @apply h-full;
+    ul {
+      @apply h-full flex flex-col justify-between;
+
+      li {
+        @apply mx-1 cursor-pointer opacity-60 hover:text-green hover:opacity-100;
+      }
+    }
+  }
+}
+
+.contacts,
+.adress {
+  p {
+    @apply opacity-60;
+  }
+}
