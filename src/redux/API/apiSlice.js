@@ -3,7 +3,7 @@ import { setCredentials, setLogout } from "../authSlice";
 
 const baseQuery = fetchBaseQuery({
   mode: "cors",
-  baseUrl: "https://fastpoints.ru/api",
+  baseUrl: "https://quickvery.ru/api",
   // baseUrl: "http://localhost:8080/api",
   credentials: "include",
   prepareHeaders: (headers) => {
